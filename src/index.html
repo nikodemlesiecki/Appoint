@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Appoint - Online Doctor Appointment Booking Website</title>
+</head>
+<body>
+  <div id="appoint">
+    <!-- Hero section -->
+    <div class="text-white hero bg-gradient-to-r from-blue-500 to-blue-600">
+      <div class="container px-4 py-6 mx-auto sm:px-6 lg:px-8 sm:py-12 lg:py-16 xl:py-20 ">
+        <div class="grid grid-cols-1 gap-8 hero__content md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 ">
+          <div
+            class="flex flex-col items-start justify-center w-full h-full space-y-4 hero__text md:space-y-8 lg:space-y-8 xl:space-y-8 ">
+            <h1
+              class="text-4xl font-bold leading-tight hero__title sm:text-5xl sm:leading-tight md:text-6xl md:leading-tight lg:text-7xl lg:leading-tight xl:text-8xl xl:leading-tight ">
+              Appoint</h1>
+            <p
+              class="text-base font-normal leading-normal hero__description sm:text-lg md:text-xl lg:text-2xl xl:text-3xl xl:leading-relaxed ">
+              Online Doctor Appointment Booking Website</p>
+            <div class="flex flex-col w-auto">
+              <div class="flex flex-col mt-8 space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4 ">
+                <!-- two dropdown search input -->
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <input
+                    class="w-full py-3 pl-10 pr-4 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                    type="text" placeholder="Search for doctors, clinics, hospitals, etc." />
+                </div>
+
+                <!-- button -->
+                <button
+                  class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 sm:w-auto ">
+                  <span>Search</span>
+                  <i
+                    class="ml-2 fas fa-search animate-bounce sm:ml-0 sm:mr-2 sm:animate-none xl:ml-2 xl:mr-2 xl:animate-bounce"></i>
+                </button>
+              </div>
+              <!-- Location Dropdown with select option -->
+              <div class="relative mt-4">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                  <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <select
+                  class="w-full py-3 pl-10 pr-4 text-base text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                  <option value="0">Select Location</option>
+                  <option value="1">Kathmandu</option>
+                  <option value="2">Lalitpur</option>
+                  <option value="3">Bhaktapur</option>
+                  <option value="4">Pokhara</option>
+                  <option value="5">Chitwan</option>
+                  <option value="6">Biratnagar</option>
+                  <option value="7">Birgunj</option>
+                  <option value="8">Butwal</option>
+                  <option value="9">Hetauda</option>
+                  <option value="10">Dharan</option>
+                  <option value="11">Dhangadhi</option>
+                  <option value="12">Bharatpur</option>
+                  <option value="13">Janakpur</option>
+                  <option value="14">Itahari</option>
+                  <option value="15">Nepalgunj</option>
+                  <option value="16">Siddharthanagar</option>
+                  <option value="17">Mahendranagar</option>
+                  <option value="18">Birendranagar</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+          <!-- hero image -->
+          <div class="hidden md:block lg:block xl:block">
+            <img class="object-cover w-full h-full py-2" src="/assets/images/hero.svg" alt="Hero Image" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Search Results Section  -->
+
+    <div class="py-20 text-white bg-gray-100">
+      <div class="container px-4 mx-auto sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+          <div class="flex flex-col w-full h-full p-4 bg-white rounded-lg shadow-md">
+            <div class="flex flex-col items-center justify-center w-full h-32 bg-gray-100 rounded-lg">
+              <img class="object-cover w-24 h-24 rounded-full" src="/assets/images/john doe.png" alt="Doctor Image" />
+            </div>
+            <div class="flex flex-col items-center justify-center w-full h-32">
+              <h2 class="text-xl font-medium text-gray-800">Dr. John Doe</h2>
+              <p class="text-sm font-medium text-gray-500">Dentist</p>
+
+              <!-- Google Maps Pin -->
+              <div class="flex items-center justify-center w-full h-8 mt-2 space-x-1 text-sm text-gray-500 ">
+                <a href="#"
+                  class="flex items-center justify-center px-2 py-1 text-xs font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700">
+                  <i class="mr-2 fas fa-map-marker-alt"></i>
+                  <span>Warsaw</span>
+                </a>
+
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center w-full h-32">
+              <p class="text-sm font-medium text-gray-500">MBBS, MD - General Medicine, DM - Cardiology</p>
+              <p class="text-sm font-medium text-gray-500">10 Years Experience Overall</p>
+              <!-- Price -->
+              <div class="flex items-center justify-center w-full h-8 mt-2 space-x-1 text-sm text-gray-500 price ">
+                <a href="#"
+                  class="flex items-center justify-center px-2 py-1 text-xs font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700">
+                  <i class="mr-2 fas fa-money-bill-wave"></i>
+                  <span>PLN 100</span>
+                </a>
+              </div>
+
+
+
+              <!-- Star Rating -->
+              <div class="flex items-center justify-center w-full h-8 mt-2 space-x-1 text-sm text-gray-500 ">
+                <a href="#"
+                  class="flex items-center justify-center px-2 py-1 text-xs font-medium text-yellow-500 bg-transparent border border-transparent rounded-full hover:bg-yellow-50 hover:text-yellow-600">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <span class="text-gray-500">(10)</span>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center w-full h-32">
+              <button
+                class="flex items-center justify-center w-full px-8 py-3 text-base font-medium text-white bg-blue-600 border border-transparent rounded-md shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 sm:w-auto ">
+                <span>Book Appointment</span>
+                <i
+                  class="ml-2 fas fa-calendar-check animate-bounce sm:ml-0 sm:mr-2 sm:animate-none xl:ml-2 xl:mr-2 xl:animate-bounce"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src=" /dist/output.js"></script>
+</body>
+</html>
